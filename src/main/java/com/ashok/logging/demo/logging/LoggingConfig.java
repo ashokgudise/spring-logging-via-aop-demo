@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class LoggingConfig {
 
-    @Around("@annotation(StopWatcher)")
+    @Around("@annotation(StopWatch)")
     public Object executionStopWatch(ProceedingJoinPoint joinPoint) throws Throwable {
 
         long start = System.currentTimeMillis();
